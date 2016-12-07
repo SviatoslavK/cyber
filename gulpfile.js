@@ -4,6 +4,7 @@ var gulp         = require('gulp'),
     watch        = require('gulp-watch'),
     uglify       = require('gulp-uglify'),
     sass         = require('gulp-sass'),
+    sourcemaps   = require('gulp-sourcemaps'),
     rigger       = require('gulp-rigger'),
     autoprefixer = require('gulp-autoprefixer'),
     cleanCSS     = require('gulp-clean-css'),
@@ -80,7 +81,9 @@ gulp.task('js:build', function() {
 gulp.task('style:build', function() {
     gulp.src(path.src.style)
         .pipe(plumber({errorHandler: notify.onError("Error: <%= error.message %>")}))
+        .pipe(sourcemaps.init())
         .pipe(sass())
+        .pipe(sourcemaps.write())
         .pipe(autoprefixer({
             browsers: ['last 5 versions', '>1%', 'ie 9'],
             cascade: false
