@@ -309,7 +309,7 @@ body {
 .header__logo--text {
   position: absolute;
   width: 100%;
-  text-align: center;
+  text-align: left;
   font: 16px cinzelregular;
   color: #00F5EA;
   letter-spacing: 4px;
