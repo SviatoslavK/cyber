@@ -39,7 +39,7 @@ $(function () {
             });
             //  $('.overlay').css({'display':'block'})
     });
-    $('.overlay').on('click', function (e) {
+    $('.overlay').add('.modal__close').on('click', function (e) {
         e.preventDefault();
         $('.modal__request').css({
             'display': 'none'
