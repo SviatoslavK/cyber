@@ -44,10 +44,10 @@ $(function() {
         e.preventDefault();
         
         var item = $(this).closest('.strategy__item'),
-            content = $('.strategy__text--inner'),
+            content      = $('.strategy__text--inner'),
             itemPosition = item.index(),
-            video = $('.strategy__board'),
-            videoNumber = video.index();
+            video        = $('.strategy__board'),
+            videoNumber  = video.index();
 
         content.eq(itemPosition)
             .addClass('active__text')
@@ -69,15 +69,15 @@ $(function() {
     $('.strategy__accordion').add('.strategy__arrow').on('click', function(e) {
        e.preventDefault();
         
-        var $this = $(this),
-            item = $this.closest('.strategy__item'),
-            list = $this.closest('.strategy__list--small'),
-            items = list.find('.strategy__item'),
-            arrow = item.find('.strategy__arrow'),
-            otherArrow = list.find('.strategy__arrow'),
-            content = item.find('.accordion__inner'),
+        var $this        = $(this),
+            item         = $this.closest('.strategy__item'),
+            list         = $this.closest('.strategy__list--small'),
+            items        = list.find('.strategy__item'),
+            arrow        = item.find('.strategy__arrow'),
+            otherArrow   = list.find('.strategy__arrow'),
+            content      = item.find('.accordion__inner'),
             otherContent = list.find('.accordion__inner'),
-            duration = 300;
+            duration     = 300;
         
         if (!item.hasClass('active__accordion')) {
             items.removeClass('active__accordion');
