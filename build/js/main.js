@@ -64,5 +64,32 @@ $(function() {
             .removeClass('active__video');
 
     });
+    
+    // Accordion 
+    $('.strategy__accordion').on('click', function(e) {
+       e.preventDefault();
+        
+        var $this = $(this),
+            item = $this.closest('.strategy__item'),
+            list = $this.closest('.strategy__list--small'),
+            items = list.find('.strategy__item'),
+            content = item.find('.accordion__inner'),
+            otherContent = list.find('.accordion__inner'),
+            duration = 300;
+        
+        
+        if (!item.hasClass('.active__accordion')) {
+            items.removeClass('.active__accordion');
+            item.addClass('.active__accordion');
+            otherContent.stop(true,true).slideUp(duration);
+            content.stop(true,true).slideDown(duration);
+        } else {
+            content.stop(true,true).slideUp(duration);
+            item.removeClass('.active__accordion');
+        }
+        
+        
+        
+    });
 
 });
