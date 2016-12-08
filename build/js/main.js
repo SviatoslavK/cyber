@@ -66,7 +66,7 @@ $(function() {
     });
     
     // Accordion 
-    $('.strategy__accordion').on('click', function(e) {
+    $('.strategy__accordion').add('.strategy__arrow').on('click', function(e) {
        e.preventDefault();
         
         var $this = $(this),
