@@ -1,0 +1,202 @@
+//@import "_variables";
+//@import "_utils";
+/* ===========================================
+===============   COLLECT   ==================
+=========================================== */
+.collect {
+    width: 100%;
+    background-color: #121212;
+    @include respond-to(desktop) {
+        height: 1170px;
+        padding-top: 90px;
+        background-color: #F8F8F8;
+    }
+}
+.collect__block {
+    box-sizing: border-box;
+    padding-top: 464.5px;
+    @include respond-to(desktop) {
+        width: 1086px;
+        margin: 0 auto;
+        height: 862px;
+        padding-top: 0;
+    }
+}
+
+.collect__header {
+    text-align: center;
+    text-transform: capitalize;
+    font: 33px cinzelbold;
+    line-height: 46px;
+    color: $white;
+    @include respond-to(desktop) {
+        font-size: 50px;
+        line-height: 59px;
+        letter-spacing: 1.2px;
+        color: $black;
+    }
+}
+
+.collect__item {
+    @include respond-to(desktop) {
+        display: inline-block;
+        float: left;
+        margin-top: 26px;
+    }
+}
+
+.collect__item--item1,
+.collect__item--item3 {
+    @include respond-to(desktop) {
+        width: 405px;
+    }
+}
+
+.collect__item--item2 {
+    @include respond-to(desktop) {
+        width: 89.59px;
+        height: 717.54px;
+        margin-left: 91px;
+        margin-right: 91px;
+        background-image: url(../img/icons/swordd.png);
+        background-position: center center;
+        background-size: cover;
+    }
+}
+
+.collect__paragraph {
+    font: 16px globerlight;
+    text-align: center;
+    color: #FCFCFC;
+    line-height: 21px;
+    margin-top: 43px;
+    text-transform: capitalize;
+    opacity: 0;
+    @include respond-to(desktop) {
+        color: #000000;
+        line-height: 22px;
+        font: 16px cinzelregular;
+        text-transform: uppercase;
+    }
+}
+.collect__subheader {
+    font: 20px globerregular;
+    text-transform: capitalize;
+    color: $cian;
+    text-align: center;
+    margin-top: 3px;
+    @include respond-to(desktop) {
+        margin-top: 6px;
+        line-height: 30px;
+        color: $black;
+        font: 22px globerbold;
+    }
+}
+.collect__paragraph--par1 {
+    margin-top: 66px;
+}
+.collect__paragraph--left,
+.collect__subheader--left {
+    @include respond-to(desktop) {
+        text-align: right;
+    }
+}
+.collect__paragraph--right,
+.collect__subheader--right {
+    @include respond-to(desktop) {
+        text-align: left;
+    }
+}
+
+.collect__paragraph--par1,
+.collect__paragraph--par1r {
+    @include respond-to(desktop) {
+        margin-top: 175px;
+    }
+}
+
+.collect__paragraph--par2 {
+    @include respond-to(desktop) {
+        margin-top: 95px;
+    }
+}
+
+.collect__paragraph--par2r {
+    @include respond-to(desktop) {
+        margin-top: 123px;
+    }
+}
+
+.collect__paragraph--par3,
+.collect__paragraph--par3r {
+    @include respond-to(desktop) {
+        margin-top: 103px;
+    }
+}
+
+.collect__paragraph--none,
+.collect__subheader--none {
+    display: none;
+    @include respond-to(desktop) {
+        display: block;
+    }
+}
+
+
+
+.collect__subheader--smaller {
+    @include respond-to(desktop) {
+        width: 395px;
+    }
+}
+
+.collect__pvp {
+    display: block;
+    width: 74.5px;
+    height: 74.5px;
+    background-color: #D90000;
+    border-radius: 50%;
+    font: 19px globerregular;
+    text-align: center;
+    line-height: 74.5px;
+    text-transform: uppercase;
+    margin: 78px auto 86px auto;
+    color: #fff;
+    @include respond-to(desktop) {
+        width: 395px;
+        margin: 46px auto 0 auto;
+        font-size: 22px;
+        width: 91px;
+        height: 91px;
+        line-height: 91px;
+    }
+    //  background-image: url(../img/icons/PVP.png);
+    //  background-position: center center;
+    //  background-size: cover; 
+}
+
+.navbar__button--collect {
+    width: 301px;
+    height: 44px;
+    background-color: #00F5EA;
+    border-radius: 25px;
+    text-align: center;
+    margin: 42px auto 0 auto;
+    @include respond-to(desktop) {
+        display: none;
+    }
+}
+
+.navbar__collect__button--text {
+    line-height: 50px;
+    letter-spacing: 0.3px;
+}
+
+.collect__video {
+    width: 100%;
+    display: inline-block;
+    height: 168px;
+    @include respond-to(desktop) {
+        display: none;
+    }
+}

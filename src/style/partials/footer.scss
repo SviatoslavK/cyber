@@ -1,0 +1,329 @@
+//@import "_variables";
+//@import "_utils";
+
+/* ===========================================
+================   FOOTER   ==================
+=========================================== */
+
+.footer {
+    position: relative;
+    height: 763.5px;
+    width: 100%;
+    color: $white;
+    /*@include respond-to(large) {
+        background-image: url(../img/background/BG_FOOTER_1920.png);
+    }*/
+    background-color: #000;
+    background-image: radial-gradient(circle, #01646c, #000 110%);
+    padding-top: 49px;
+    @include respond-to(desktop) {
+        height: 613px;
+        margin-top: -3px;
+        background-image: radial-gradient(circle, #01646c, #000 50%);
+        background-position: center center;
+        background-size: cover;
+        //        background-image: url(../img/background/BG-FOOTER.png);
+        padding-top: 0;
+    }
+}
+
+.footer__img {
+    width: 321px;
+    height: 371px;
+    position: absolute;
+    left: 50%;
+    top: 200px;
+    margin-left: -160px;
+    z-index: -1;
+}
+
+.footer__item {
+    display: inline-block;
+    float: left;
+    position: relative;
+    height: 613px;
+}
+
+.footer__find-text {
+    display: inline-block;
+    font: 17px globerregular;
+    line-height: 26px;
+    margin-top: 269px;
+    margin-left: 95px;
+}
+
+.footer__find-text--right {
+    margin-left: 197px;
+}
+
+.footer__btn {
+    margin: 0 auto;
+    height: 44px;
+    width: 280px;
+    box-sizing: border-box;
+    border: 1.5px solid rgba(255, 255, 266, 0.26);
+    border-radius: 30px;
+    @include respond-to(desktop) {
+        width: 145.13px;
+        height: 40.26px;
+        margin-top: 2px;
+        margin-left: 58px;
+        border: 1px solid #ffffff;
+    }
+}
+
+.footer__btn--link {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.footer__icon--facebook {
+    display: inline-block;
+    float: left;
+    width: 7.42px;
+    height: 15.09px;
+    margin: 13.5px 68px 0 25.5px;
+    background-image: url(../img/icons/fb-icon.png);
+    background-position: center center;
+    background-size: cover;
+    @include respond-to(desktop) {
+        margin-left: 16px;
+        margin-right: 16px;
+        margin-top: 12px;
+    }
+}
+
+.footer__icon--twitter {
+    display: inline-block;
+    margin-left: 20px;
+    width: 16.08px;
+    height: 13.61px;
+    background-image: url(../img/icons/twitter-icon.png);
+    background-position: center center;
+    background-size: cover;
+    float: left;
+    margin-right: 75px;
+    margin-top: 15px;
+    @include respond-to(desktop) {
+        margin-right: 23px;
+        margin-left: 17px;
+        margin-top: 13px;
+    }
+}
+
+.footer__btn--twitter {
+    margin-top: 15px;
+    @include respond-to(desktop) {
+        margin-left: 169px;
+        margin-top: auto;
+    }
+}
+
+.footer__btn--facebook {
+    margin-top: 35.5px;
+    @include respond-to(desktop) {
+        margin-top: auto;
+    }
+}
+
+.btn__text {
+    float: left;
+    font: 18px globerlight;
+    letter-spacing: 0.35px;
+    line-height: 42px;
+    @include respond-to(desktop) {
+        font: 16px globerregular;
+        line-height: 38px;
+    }
+}
+
+.lang__item {
+    display: inline-block;
+    width: 23.39px;
+    height: 23px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 23px;
+    margin-right: 8px;
+    color: #8A8A8A;
+}
+
+.lang__item:hover {
+    background-color: #ffffff;
+    color: #000000;
+    cursor: pointer;
+}
+
+.lang__item:last-child {
+    margin-right: 0;
+}
+
+.lang__item.active--lang {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.footer__lang {
+    margin-left: 25px;
+    position: absolute;
+    bottom: 10px;
+}
+
+.lang__link {
+    text-transform: uppercase;
+    font: 12px globerbold;
+}
+
+.footer__privacy {
+    position: absolute;
+    bottom: 10px;
+    width: 330px;
+}
+
+.privacy__item {
+    display: inline-block;
+    margin-right: 39px;
+    float: right;
+}
+
+.privacy__item:last-child {
+    margin-right: 0;
+}
+
+.privacy__link {
+    font: 12px globerbold;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.footer__main-text {
+    height: 28.5px;
+    width: 244px;
+    margin: 0 auto 20px auto;
+    @include respond-to(desktop) {
+        margin-top: 289px;
+        margin-left: 169px;
+        width: 444.7px;
+        height: 49.8px;
+        background-image: url(../img/icons/ATTRACTI%20VF.png);
+        background-size: cover;
+        background-position: center center;
+    }
+}
+
+.footer__country-link {
+    display: inline-block;
+}
+
+.footer__country-link {
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.sw {
+    width: 61.5px;
+    height: 14.5px;
+    background-image: url(../img/icons/Switzerland.png);
+    margin-left: 21%;
+    margin-right: 17%;
+    @include respond-to(desktop) {
+        width: 74px;
+        height: 17px;
+        margin-left: 47%;
+        margin-right: 10%;
+    }
+}
+
+.uk {
+    width: 41.5px;
+    height: 14.5px;
+    background-image: url(../img/icons/Ukraine.png);
+    @include respond-to(desktop) {
+        width: 50px;
+        height: 17px;
+    }
+}
+
+.footer__main-text img {
+    height: 80%;
+    width: 100%;
+}
+
+.footer__shield {
+    background-image: url(../img/icons/bg-shield.png);
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 235px;
+    height: 355px;
+    left: 50%;
+    margin-left: -117px;
+    top: 37%;
+    @include respond-to(desktop) {
+        width: 300px;
+        height: 435px;
+        margin-left: -150px;
+        top: 15%;
+    }
+}
+
+.footer__attracti-games {
+    width: 93px;
+    height: 9.7px;
+    margin: 18px auto 0 auto;
+    background-image: url(../img/icons/ATTRACTI-GAMES.png);
+    @include background;
+}
+
+.small-hide {
+    display: none;
+    @include respond-to(desktop) {
+        display: block;
+    }
+}
+
+.large-hide {
+    display: block;
+    position: relative;
+    @include respond-to(desktop) {
+        display: none;
+    }
+}
+
+.footer__languages {
+    margin-top: 393.5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    height: 18px;
+    line-height: 18px;
+}
+
+.languages__text {
+    font: 12px globerregular;
+}
+
+.languages__lang {
+    display: inline-block;
+    float: right;
+    margin-right: 15px;
+    font: 14px globerregular;
+}
+
+.footer__politics {
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-top: 21px;
+}
+
+.privacy__link--right {
+    float: right;
+}
+
+.privacy__link--politics {
+    font: 12px globerlight;
+}

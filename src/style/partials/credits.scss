@@ -1,0 +1,141 @@
+//@import "_variables";
+//@import "_utils";
+/* ===========================================
+===============   CREDITS   ==================
+=========================================== */
+.credits {
+    
+    display: none;
+    @include respond-to(desktop) {
+         display: block;
+        position: relative;
+    width: 100%;
+    height: auto;
+    /*z-index: -1;*/
+    margin-top: -1px;
+    background-color: #000;
+    /*@include respond-to(large) {
+        height: 1084px;
+    }*/
+    }
+}
+.credits-sm {
+    @include respond-to(desktop) {
+        position: relative;
+    width: 100%;
+    height: auto;
+    /*z-index: -1;*/
+    margin-top: -1px;
+    background-color: #000;
+    /*@include respond-to(large) {
+        height: 1084px;
+    }*/
+        display: none;
+    }
+    position: relative;
+    width: 100%;
+    height: 597px;
+    /*z-index: -1;*/
+    margin-top: -1px;
+    background-color: #000;
+    /*@include respond-to(large) {
+        height: 1084px;
+    }*/
+}
+.credit__circle {
+    width: 204px;
+    height: 222.5px;
+    transform: rotate(90deg);
+    position: absolute;
+    right: 0;
+    @include respond-to(desktop){
+        display: none;
+    }
+}
+.credits .container {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -600px;
+}
+.credit__block {
+    position: relative;
+    width: 300px;
+    margin: 0 auto;
+    height: 400px;
+    text-align: center;
+    color: #ffffff;
+    overflow: hidden;
+    @include respond-to(desktop) {
+        height: 500px;
+    }
+}
+
+@media (min-width: 1366px) {
+    .credit__block {
+        padding-top: 160px;
+    }
+}
+
+.credit__block--wrapp {
+    position: absolute;
+    -webkit-animation: title 20s infinite linear;
+    animation: title 20s infinite linear;
+}
+
+.credit__header {
+    padding-top: 74px;
+    line-height: 28px;
+    text-align: center;
+    color: #ffffff;
+    font: 23px cinzelbold;
+    margin-bottom: 35px;
+    @include respond-to(desktop) {
+        margin-bottom: 30px;
+        font: 30px cinzelbold;
+        padding-top: 50px;
+    }
+}
+
+.credit__position {
+    font: 16px cinzelregular;
+    line-height: 22px;
+    margin-top: 60px;
+}
+
+.credit__position--blue {
+    color: #2485a1;
+}
+
+.credit__position--pos1 {
+    margin-top: 120px;
+}
+
+.credit__position--pos3 {
+    margin-top: 48px;
+}
+
+.credit__name {
+    font: 24px globerregular;
+    line-height: 36px;
+    margin-top: 5px;
+    text-transform: capitalize;
+}
+
+.credits__video {
+    /*position: absolute;
+    top: 0;
+    left: 0;*/
+    display: none;
+    @include respond-to(desktop) {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+}
+.credit__logo {
+    @include center;
+    height: 200px;
+    animation: rotate 5s infinite linear
+        
+}

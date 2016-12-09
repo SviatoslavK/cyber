@@ -1,0 +1,183 @@
+//@import "_variables";
+//@import "_utils";
+/* ===========================================
+================   NEWS   ====================
+=========================================== */
+.news {
+    position: relative;
+    width: 100%;
+    height: 1507px;
+//    background-image: url(../img/background/news-bg.png);
+//    background-position: center center;
+//    background-size: cover;
+    background-color: rgba(226, 237, 240, 0.85);
+    @include respond-to(desktop) {
+//        z-index: 2;
+        height: 2367px;
+    }
+}
+
+.news__circle {
+    display: none;
+    @include respond-to(desktop) {
+        position: absolute;
+        top: 0;
+        display: inline-block;
+        width: 951px;
+        left: 50%;
+        margin-left: -475px;
+        z-index: -1;
+    }
+}
+
+.news__post {
+    display: inline-block;
+    height: 1297px;
+    @include respond-to(desktop) {
+        width: 421px;
+        height: 1843px;
+    }
+}
+
+.news__post--left {
+    display: none;
+    opacity: 0;
+    box-sizing: border-box;
+    padding-top: 787px;
+    @include respond-to(desktop) {
+        display: inline-block;
+    }
+}
+
+.news__post--right {
+    padding-left: 30%;
+    padding-top: 530px;
+    box-sizing: border-box;
+    opacity: 1;
+    @include respond-to(desktop) {
+        padding-left: 0;
+        opacity: 0;
+        width: 410px;
+    }
+}
+
+.news__sword {
+    display: inline-block;
+    width: 251.5px;
+    height: 1297px;
+    background-image: url(../img/icons/sword.png);
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 40px;
+    left: -27%;
+    @include respond-to(desktop) {
+        margin-top: 149px;
+        width: 357px;
+        height: 1728px;
+        position: static;
+    }
+}
+
+.post__wrapp {
+    box-sizing: border-box;
+    width: 217px;
+    //    height: 162px;
+    height: auto;
+    border: 1px solid #E8E8E8;
+    border-radius: 5px;
+    padding: 14px 13px 15px 13px;
+    margin-top: 20px;
+    @include respond-to(desktop) {
+        padding: 22px 19px 15px 20px;
+        width: 410px;
+        float: left;
+        height: auto;
+    }
+}
+
+.first-post {
+    @include respond-to(desktop) {
+        margin-top: 787px;
+    }
+}
+
+.second-post {
+    @include respond-to(desktop) {
+        margin-top: 476px;
+    }
+}
+
+.third-post {
+    margin-top: 530px;
+    @include respond-to(desktop) {
+        margin-top: 645px;
+    }
+}
+
+.fourth-post {
+    @include respond-to(desktop) {
+        margin-top: 153px;
+    }
+}
+
+.fifth-post {
+    @include respond-to(desktop) {
+        margin-top: 210px;
+    }
+}
+
+.post__date {
+    font: 15px globerregular;
+    color: #000;
+    letter-spacing: -0.3px;
+    line-height: 20px;
+    @include respond-to(desktop) {
+        font: 14px globerregular;
+        letter-spacing: -0.28px;
+        line-height: 19px;
+        color: #979797;
+    }
+}
+
+.post__header {
+    font: 15px globerbold;
+    line-height: 20px;
+    letter-spacing: -0.21px;
+    color: #000000;
+    text-transform: capitalize;
+    @include respond-to(desktop) {
+        font: 14px globerregular;
+        letter-spacing: -0.21px;
+    }
+}
+
+.post__text {
+    font: 15px globerlight;
+    line-height: 19px;
+    color: #838383;
+    @include respond-to(desktop) {
+        margin-top: 6px;
+        font: 14px globerregular;
+        line-height: 19px;
+        letter-spacing: -0.28px;
+    }
+}
+
+.news__dontlose {
+    margin-top: 80px;
+    text-align: center;
+    font: 15px globerregular;
+    letter-spacing: 5px;
+    line-height: 20px;
+    color: #000;
+    @include respond-to(desktop) {
+        margin-top: 294px;
+        text-align: center;
+        font: 14px globerregular;
+        letter-spacing: 6px;
+        line-height: 19px;
+        color: #797979;
+    }
+}

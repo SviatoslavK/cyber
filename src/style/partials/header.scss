@@ -1,0 +1,538 @@
+/* ===========================================
+================   HEADER   ==================
+=========================================== */
+
+//@import "_variables";
+//@import "_utils";
+.header {
+    height: 636px;
+    position: relative;
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+    background-image: url(../img/background/header-bg.png);
+    @include respond-to(desktop) {
+        height: 808px;
+        background-image: none;
+    }
+}
+
+.header .container {
+    padding-left: 5px;
+}
+
+.header__video {
+    display: none;
+    @include respond-to(desktop) {
+        position: absolute;
+        /*top: -272%;*/
+        display: block;
+        width: 100%;
+        max-width: 1366px;
+        height: auto;
+        z-index: -1;
+        @include center;
+    }
+}
+
+.header__overlay {
+    @include respond-to(desktop) {
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        background-color: rgba(0, 0, 0, 0.87);
+    }
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    position: absolute;
+}
+
+.navbar {
+    display: none;
+    @include respond-to(desktop) {
+        display: block;
+        width: 100%;
+        position: fixed;
+        max-width: 1366px;
+        height: 65px;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        z-index: 100;
+        //  margin: 0 auto;
+        background-color: rgba(0, 0, 0, 0.49);
+    }
+}
+
+.navbar__list {
+    display: inline-block;
+    width: 780px;
+    height: 46px;
+    margin-left: 19px;
+    padding-top: 10px;
+}
+
+.navbar__item {
+    display: inline-block;
+    float: left;
+    margin-right: 34px;
+}
+.navbar__item0 {
+    display: none;
+}
+.navbar__item--item3 {
+    margin-right: 35px;
+}
+
+.navbar__item--item4 {
+    margin-right: 46px;
+}
+
+.navbar__item--item5 {
+    margin-right: 33px;
+}
+
+.navbar__item--item6 {
+    margin-right: 36px;
+}
+
+.navbar__link {
+    font: 12px globerbold;
+    line-height: 46px;
+    color: #00F5EA;
+    text-transform: uppercase;
+}
+
+.navbar__logo {
+    display: none;
+    float: right;
+    width: 140px;
+    height: 46px;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 2px;
+}
+
+.navbar__logo--img {
+    display: inline-block;
+    margin-left: 15px;
+    margin-top: 9px;
+    width: 108px;
+    height: 30px;
+}
+
+.nav-logo-1 {
+    height: 20px;
+    width: 141px;
+    display: inline-block;
+    background-image: url(../img/icons/nav-logo.png);
+    @include background;
+    margin-top: 12px;
+    margin-right: 2px;
+}
+.modal__logo {
+    background-image: url(../img/icons/nav-logo.png);
+    @include background;
+    height: 10px;
+    width: 70px;
+    margin-left: 20px;
+    margin-top: 5px;
+
+}
+
+.navbar__button {
+    width: 170px;
+    height: 40px;
+    background-color: #00F5EA;
+    float: right;
+    //    margin-right: -11px;
+    border-radius: 25px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.navbar__button--text {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    text-transform: uppercase;
+    color: #000000;
+    font: 14px globerbold;
+    line-height: 40px;
+}
+
+.navbar__logo--grey {
+    width: 133px;
+    height: 27px;
+    display: inline-block;
+}
+
+.header__logo {
+    position: relative;
+    margin-top: 127px;
+    display: inline-block;
+    @include respond-to(mobile) {
+        margin-left: 20px;
+    }
+    @include respond-to(desktop) {
+        float: left;
+        height: 139px;
+        margin-top: 287px;
+        margin-left: 100px;
+    }
+}
+
+.header__logo--text {
+    position: absolute;
+    width: 100%;
+    text-align: left;
+    font: 16px cinzelregular;
+    color: #00F5EA;
+    letter-spacing: 4px;
+    top: -72px;
+    @include respond-to(desktop) {
+        font: 24.41px cinzelbold;
+        bottom: 0;
+        top: auto;
+        letter-spacing: 13.9px;
+    }
+}
+
+.header__logo--m3 {
+    display: inline-block;
+    width: 123.245px;
+    height: 61.445px;
+    //    background-image: url(../img/icons/m3.png);
+    //    @include background;
+    @include respond-to(desktop) {
+        width: 172.88px;
+        height: 86.21px;
+        margin-right: 19px;
+    }
+}
+
+.header__logo--cyber {
+    display: inline-block;
+    width: 306.295px;
+    height: 60.795px;
+    margin-top: 12px;
+    @include respond-to(desktop) {
+        width: 413.03px;
+        height: 87.41px;
+    }
+}
+
+.header__img {
+    display: block;
+    width: 130%;
+    margin-top: 48px;
+    position: absolute;
+    margin-left: -42px;
+    @include respond-to(mobile) {
+        width: 126%;
+    }
+    @include respond-to(desktop) {
+        margin-top: 117px;
+        margin-left: 12px;
+        width: 358.29px;
+        height: 627px;
+        display: inline-block;
+    }
+}
+
+.header__img img {
+    width: 100%;
+    height: 100%;
+}
+
+.modal__request {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    background-image: url(../img/background/modal-req.png);
+//    background-color: #eee;
+    background-position: center center;
+    background-size: cover;
+    z-index: 1000;
+    display: none;
+    @include respond-to(desktop) {
+        width: 551px;
+        height: 95vh;
+    }
+}
+
+.modal__header {
+    padding-top: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    font: 33px cinzelbold;
+    color: $cian;
+    @include respond-to(desktop) {
+        font: 50px cinzelbold;
+        color: #ffffff;
+    }
+}
+
+@media (min-width: 1366px) {
+    .modal__header {
+        padding-top: 85px;
+    }
+}
+
+.modal__input {
+    display: block;
+    height: 50px;
+    width: 85%;
+    line-height: 50px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    text-align: center;
+    color: rgba(255, 255, 255, 0.85);
+    font: 15px globerbold;
+    margin: 5px auto 0 auto;
+    @include respond-to(desktop) {
+        margin: 30px auto 0 auto;
+        width: 35%;
+    }
+}
+
+@media (min-width: 1366px) {
+    .modal__input {
+        margin: 68px auto 0 auto;
+    }
+}
+
+.modal__input::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.15);
+}
+
+.modal__input::-moz-placeholder {
+    color: rgba(255, 255, 255, 0.15);
+}
+
+.modal__input:-moz-placeholder {
+    color: rgba(255, 255, 255, 0.15);
+}
+
+.modal__input:-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.15);
+}
+
+.modal__description {
+    font: 16px globerregular;
+    text-align: left;
+    width: 85%;
+    color: rgba(234, 234, 234, 0.41);
+    margin: 8px auto 0 auto;
+    @include respond-to(desktop) {
+        letter-spacing: 0px;
+        margin-top: 10px;
+        width: auto;
+        font: 13px globerregular;
+        text-align: center;
+    }
+}
+
+@media (min-width: 1366px) {
+    .modal__description {
+        margin-top: 15px;
+    }
+}
+
+.choose-platform {
+    text-align: center;
+    text-transform: uppercase;
+    font: 16px cinzelbold;
+    letter-spacing: 1px;
+    color: #ffffff;
+    margin-top: 35px;
+    margin-bottom: 0;
+    @include respond-to(desktop) {
+        margin-top: 113px;
+    }
+}
+
+.ios__text {
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    margin-right: 50px;
+    margin-left: 5px;
+    @include respond-to(desktop) {
+        margin-bottom: 15px;
+        margin-left: 0;
+    }
+}
+
+.platform {
+    width: 240px;
+    margin: 20px auto 0 auto;
+    @include respond-to(desktop) {
+        width: 50%;
+        margin: 30px auto 0 auto;
+    }
+}
+
+.platform__text {
+    height: 32.5px;
+    font: 16px globerregular;
+    color: #BEBEBE;
+    display: inline-block;
+    line-height: 33px;
+    height: 100%;
+    width: auto;
+    position: relative;
+    padding-left: 45px;
+    cursor: pointer;
+    @include respond-to(desktop) {
+        font: 24px globerregular;
+        height: 37.5px;
+        line-height: 38px;
+        padding-left: 50px;
+    }
+}
+
+input[type=radio] {
+    display: none;
+}
+
+.platform__text:before {
+    content: "";
+    height: 32.5px;
+    width: 32.5px;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-position: center center;
+    background-size: cover;
+    background-image: url(../img/icons/INACTIVE.png);
+    @include respond-to(desktop) {
+        height: 37.5px;
+        width: 37.5px;
+    }
+}
+
+input[type=radio]:checked + label:before {
+    content: "";
+    color: #00F5EA;
+    background-image: url(../img/icons/IOS_ACTIVE.png);
+}
+
+input[type=radio]:checked + .platform__text {
+    color: #00F5EA;
+}
+
+.modal__button {
+    display: block;
+    width: 85%;
+    height: 44px;
+    background-color: #00F5EA;
+    border-radius: 25px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    font: 14px globerbold;
+    line-height: 44px;
+    margin: 26px auto 0 auto;
+    @include respond-to(desktop) {
+        margin: 56px auto 0 auto;
+        width: 170px;
+    }
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 999;
+    display: none;
+}
+
+.modal__thank {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    background-image: url(../img/background/thank-modal.png);
+    background-position: center center;
+    background-size: cover;
+    z-index: 1000;
+    display: none;
+    @include respond-to(desktop) {
+        width: 551px;
+        height: 95vh;
+    }
+}
+
+.modal__header--thank {
+    padding-top: 137px;
+    text-align: center;
+    font: 40px cinzelbold;
+    color: #00F5EA;
+    @include respond-to(desktop) {
+        font: 50px cinzelbold;
+        padding-top: 115px;
+    }
+}
+
+.modal__description--thank {
+    font: 16px globerregular;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+    width: 80%;
+    line-height: 29px;
+    margin: 76px auto 42px auto;
+    @include respond-to(desktop) {
+        font: 22px globerregular;
+        margin: 70px auto 80px auto;
+    }
+}
+
+
+.modal__close {
+    position: absolute;
+    top: 16px;
+    left: 20px;
+    display: block;
+    @include respond-to(desktop) {
+        display: none;
+    }
+}
+.modal__arrow {
+    height: 17px;
+    width: 10px;
+    transform: rotate(180deg);
+    background-image: url(../img/icons/arrow.png);
+    @include background;
+    display: inline-block;
+    margin-right: 10px;
+    float: left;
+    margin-top: 2px;
+}
+.modal__back {
+    font: 16px globerlight;
+    display: inline-block;
+    color: $white;
+    float: left;
+}
