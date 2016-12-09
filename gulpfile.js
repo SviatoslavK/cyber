@@ -89,7 +89,7 @@ gulp.task('style:build', function() {
             cascade: false
         }))
         .pipe(uncss({
-            html: ['build/index.html', 'src/template/*.html']
+            html: ['build/*.html', 'src/template/*.html']
         }))
 //        .pipe(csso())
 //        .pipe(cleanCSS())
