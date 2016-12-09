@@ -15,28 +15,49 @@
         display: block;
     }
 }
-
+.championship {
+    width: 100%;
+    background-color: #000000;
+    color: #ffffff;
+}
 .championships__header {
-    padding-top: 96px;
-    font: 30px cinzelbold;
+    padding-top: 73px;
+    font: 23px cinzelbold;
     line-height: 28px;
     text-align: center;
+    @include respond-to(desktop) {
+        font: 30px cinzelbold;
+        padding-top: 96px;
+    }
 }
 
 .championships__global {
-    font: 24px globerregular;
+    font: 20px globerregular;
     line-height: 36px;
-    margin-top: 17px;
+    margin-top: 50px;
+    color: #5F5F5F;
+    @include respond-to(desktop) {
+        font: 24px globerregular;
+        margin-top: 17px;
+        color: $white;
+    }
 }
 
 .championships__phone-model {
-    font: 22px globerregular;
+    font: 19px globerregular;
     line-height: 30px;
+    @include respond-to(desktop) {
+        font: 22px globerregular;
+    }
 }
 
 .qualificaion__list {
-    height: 40px;
-    margin-top: 32px;
+//    height: 40px;
+    margin-top: 30px;
+    @include respond-to(desktop) {
+        height: 40px;
+        margin-top: 32px;
+    }
 }
 
 .qualificaion__item {
@@ -52,7 +73,10 @@
     text-transform: uppercase;
     border-radius: 20px;
     float: left;
-    margin-right: 52px;
+    margin-right: 43px;
+    @include respond-to(mobile) {
+        margin-right: 52px;
+    }
 }
 
 .qualificaion__item:hover {
@@ -77,18 +101,65 @@
 
 .qualificaion__item1,
 .qualificaion__item10 {
-    width: 176px;
-    font: 14px globerbold;
-    line-height: 38px;
+    width: 100%;
+    font: 15px globerbold;
+    line-height: 35px;
+    letter-spacing: 0.64px;
+    background-color: #000;
+    border-radius: 5px;
+    @include respond-to(desktop) {
+        width: 176px;
+        font: 14px globerbold;
+        line-height: 38px;
+        letter-spacing: 0px;
+        border-radius: 20px;
+        background-color: #121212;
+    }
 }
 
 .qualificaion__item1 {
-    margin-right: 52px;
+    @include respond-to(desktop) {
+        margin-right: 52px;
+    }  
 }
-
+.qualificaion__item2,
+.qualificaion__item6 {
+    margin-left: 15px;
+    @include respond-to(desktop) {
+        margin-left: 0;
+    }  
+}
+.qualificaion__item2,
+.qualificaion__item3,
+.qualificaion__item4,
+.qualificaion__item5 {
+    margin-top: 40px;
+    @include respond-to(desktop) {
+        margin-top: 0;
+    }  
+}
+.qualificaion__item6,
+.qualificaion__item7,
+.qualificaion__item8,
+.qualificaion__item9 {
+    margin-top: 20px;
+    @include respond-to(desktop) {
+        margin-top: 0;
+    }  
+}
+.qualificaion__item5 {
+    margin-right: 0;
+    @include respond-to(desktop) {
+        margin-right: 52px;
+    }  
+}
 .qualificaion__item10 {
     color: rgba(255, 255, 255, 0.31);
-    margin-left: 53px;
+    margin-top: 21px;
+    @include respond-to(desktop) {
+        margin-left: 53px;
+        margin-top: 0;
+    }
 }
 
 .inactive-championships {
@@ -173,13 +244,19 @@
 
 .championships__item {
     position: relative;
-    height: 120px;
-    width: 1200px;
+    height: auto;
+    width: 100%;
     box-sizing: border-box;
     border-left: 4px solid #2C2C2C;
     margin-top: 22px;
     margin-bottom: 25px;
     background-color: #121212;
+    padding-bottom: 45px;
+    @include respond-to(desktop) {
+        width: 1200px;
+        height: 120px;
+        padding-bottom: 0;
+    }
 }
 
 .championships__item--item3 {
@@ -187,33 +264,53 @@
 }
 
 .time {
-    display: block;
-    margin-top: 5px;
-    margin-left: 14px;
-    font: 14px globerbold;
-    letter-spacing: -0.21px;
-    line-height: 22px;
+    display: inline-block;
+    margin-top: 27px;
+    margin-left: 7px;
+    font: 15px globerbold;
+    letter-spacing: -0.45px;
+    line-height: 20px;
     color: #434343;
+    float: left;
+    @include respond-to(desktop) {
+        display: block;
+        float: none;
+        margin-left: 14px;
+        margin-top: 5px;
+        font: 14px globerbold;
+        letter-spacing: -0.21px;
+    }
 }
 
 .stage {
     margin-left: 13px;
-    font: 24px globerregular;
+    font: 20px globerregular;
     line-height: 36px;
-    margin-top: -2px;
+    margin-top: 18px;
     float: left;
+    @include respond-to(desktop) {
+        font: 24px globerregular;
+        margin-top: -2px;
+    }
 }
 
 .qual {
     width: 38px;
     position: absolute;
-    bottom: 30px;
-    left: 50%;
-    margin-left: -19px;
+    top: 16px;
+    right: 18px; 
     text-align: center;
-    font: 14px globerregular;
+    font: 15px globerregular;
     line-height: 22px;
     text-transform: uppercase;
+    @include respond-to(desktop) {
+        bottom: 30px;
+        left: 50%;
+        right: auto;
+        top: auto;
+        font: 14px globerregular;
+        margin-left: -19px;
+    }
 }
 
 .win-lose {
@@ -253,29 +350,57 @@
     position: relative;
     display: inline-block;
     height: 45px;
-    width: 251px;
-    margin-top: 30px;
-    float: left;
+    width: 90%;
+    margin-top: 29px;
+    margin-left: 12px;
+    @include respond-to(desktop) {
+        width: 251px;
+        margin-top: 30px;
+        float: left;
+        margin-left: auto;
+    }
 }
 
 .battle1-2--first,
 .battle-final--first {
-    margin-left: 235px;
+    @include respond-to(desktop) {
+        margin-left: 235px;
+    }
+    
 }
-
+//.battle-final--first {
+//    width: 45%;
+//    @include respond-to(desktop) {
+//        width: auto;
+//    }
+//}
+//.battle-final--second {
+//    width: 45%;
+//    @include respond-to(desktop) {
+//        width: auto;
+//    }
+//}
 .battle1-2--second,
 .battle-final--second,
 .battle1-4--third {
-    margin-left: 68px;
+    @include respond-to(desktop) {
+        margin-left: 68px;
+    }
 }
 
 .battle1-4--first {
-    margin-left: -55px;
+    
+    @include respond-to(desktop) {
+        margin-left: -55px;
+    }
 }
 
 .battle1-4--second,
 .battle1-4--fourth {
-    margin-left: 43px;
+    
+    @include respond-to(desktop) {
+        margin-left: 43px;
+    }
 }
 
 .cell__winner {
@@ -297,11 +422,25 @@
     left: 0;
     top: 0;
 }
-
+.vs {
+    font: 15px globerbold;
+    text-transform: uppercase;
+    color: #363636;
+    width: 18px;
+    height: 20px;
+    @include center;
+    @include respond-to(desktop) {
+        display: none;
+    }
+}
 .cell--second {
     position: absolute;
-    left: 130px;
     top: 0;
+    right: 0;
+    @include respond-to(desktop) {
+        left: 130px;
+        right: auto;
+    }
 }
 
 .cell__inner-text {
