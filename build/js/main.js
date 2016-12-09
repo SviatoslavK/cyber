@@ -80,38 +80,38 @@ $(function () {
     });
 
     // Accordion 
-    $('.strategy__accordion').add('.strategy__arrow').on('click', function (e) {
-        e.preventDefault();
-
-        var $this = $(this),
-            item = $this.closest('.strategy__item'),
-            list = $this.closest('.strategy__list--small'),
-            items = list.find('.strategy__item'),
-            arrow = item.find('.strategy__arrow'),
-            otherArrow = list.find('.strategy__arrow'),
-            content = item.find('.accordion__inner'),
-            otherContent = list.find('.accordion__inner'),
-            duration = 300;
-
-        if (!item.hasClass('active__accordion')) {
-            items.removeClass('active__accordion');
-            item.addClass('active__accordion');
-            otherContent.stop(true, true).slideUp(duration);
-            content.stop(true, true).slideDown(duration);
-            otherArrow.css({
-                'transform': 'rotate(0deg)'
-            });
-            arrow.css({
-                'transform': 'rotate(90deg)'
-            });
-        } else {
-            content.stop(true, true).slideUp(duration);
-            item.removeClass('active__accordion');
-            arrow.css({
-                'transform': 'rotate(0deg)'
-            });
-        }
-
-    });
+//    $('.strategy__accordion').add('.strategy__arrow').on('click', function (e) {
+//        e.preventDefault();
+//
+//        var $this = $(this),
+//            item = $this.closest('.strategy__item'),
+//            list = $this.closest('.strategy__list--small'),
+//            items = list.find('.strategy__item'),
+//            arrow = item.find('.strategy__arrow'),
+//            otherArrow = list.find('.strategy__arrow'),
+//            content = item.find('.accordion__inner'),
+//            otherContent = list.find('.accordion__inner'),
+//            duration = 300;
+//
+//        if (!item.hasClass('active__accordion')) {
+//            items.removeClass('active__accordion');
+//            item.addClass('active__accordion');
+//            otherContent.stop(true, true).slideUp(duration);
+//            content.stop(true, true).slideDown(duration);
+//            otherArrow.css({
+//                'transform': 'rotate(0deg)'
+//            });
+//            arrow.css({
+//                'transform': 'rotate(90deg)'
+//            });
+//        } else {
+//            content.stop(true, true).slideUp(duration);
+//            item.removeClass('active__accordion');
+//            arrow.css({
+//                'transform': 'rotate(0deg)'
+//            });
+//        }
+//
+//    });
 
 });
