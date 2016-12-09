@@ -9,7 +9,7 @@
 </head>
 <body>
    <div class="wrapp">
-    <div class="header" id="header">
+    <div class="header section" id="header">
     
         <video loop muted autoplay class="header__video">
             <source src="img/video/header.mp4" type="video/mp4">
@@ -27,25 +27,25 @@
                             </a>
                         </li>
                         <li class="navbar__item navbar__item1">
-                            <a href="#about" class="navbar__link">ABOUT</a>
+                            <a href=".collect" class="navbar__link">ABOUT</a>
                         </li>
                         <li class="navbar__item navbar__item2">
-                            <a href="#rating" class="navbar__link">RATINGS</a>
+                            <a href=".raiting" class="navbar__link">RATINGS</a>
                         </li>
                         <li class="navbar__item navbar__item3">
-                            <a href="#credits" class="navbar__link">CREDITS</a>
+                            <a href=".credits" class="navbar__link">CREDITS</a>
                         </li>
                         <li class="navbar__item navbar__item4">
-                            <a href="#championships" class="navbar__link">CHAMPIONSHIPS</a>
+                            <a href=".championships" class="navbar__link">CHAMPIONSHIPS</a>
                         </li>
                         <li class="navbar__item navbar__item5">
-                            <a href="#strategy" class="navbar__link">STRATEGY</a>
+                            <a href=".strategy" class="navbar__link">STRATEGY</a>
                         </li>
                         <li class="navbar__item navbar__item6">
-                            <a href="#news" class="navbar__link">NEWS</a>
+                            <a href=".news" class="navbar__link">NEWS</a>
                         </li>
                         <li class="navbar__item navbar__item7">
-                            <a href="#media" class="navbar__link">MEDIA</a>
+                            <a href=".follow" class="navbar__link">MEDIA</a>
                         </li>
                         <li class="navbar__logo">
                             <img src="img/icons/apple-logo.png" alt="apple-logo" class="navbar__logo--img">
@@ -100,7 +100,7 @@
     </div>
     <div class="overlay"></div>
     
-    <div class="collect" id="about">
+    <div class="collect section" id="about">
         <div class="container">
             <div class="collect__block">
                 <h2 class="collect__header">Collect. Attack.</h2>
@@ -135,7 +135,7 @@
         </div>
     </div>
     
-    <div class="raiting" id="rating">
+    <div class="raiting section" id="rating">
         <div class="container">
            <div class="raiting__header">Raiting</div>
             <div class="raiting__logo">
@@ -189,7 +189,7 @@
             </div>
         </div>
     
-    <div class="championships clearfix" id="championships">
+    <div class="championships clearfix section" id="championships">
             <div class="container">
                
                 <h2 class="championships__header">Championships</h2>
@@ -380,10 +380,8 @@
         </div>
     -->
         <div class="container">
-            
             <h2 class="strategy__header">Strategy</h2>
             <h3 class="strategy__subheader strategy__subheader--left">EASY TO PLAY</h3>
-    
             <h3 class="strategy__subheader strategy__subheader--right">HARD TO WIN</h3>
             <div class="strategy__tab-wrapp">
                 <ul class="strategy__list">
@@ -391,10 +389,10 @@
                         <a href="#" class="strategy__link">Energy collection</a>
                     </li>
                     <li class="strategy__item strategy__item--item2">
-                        <a href="#" class="strategy__link">Hit</a>
+                        <a href="#" class="strategy__link">Attack</a>
                     </li>
                     <li class="strategy__item strategy__item--item3">
-                        <a href="#" class="strategy__link">Special stones</a>
+                        <a href="#" class="strategy__link">Protection</a>
                     </li>
                     <li class="strategy__item strategy__item--item4">
                         <a href="#" class="strategy__link">Special stones</a>
@@ -405,7 +403,7 @@
                 </ul>
                 <ul class="strategy__list strategy__list--small">
                     <li class="strategy__item strategy__item--item1 active__accordion">
-                        <a href="attack.html" class="strategy__accordion">Energy collection</a>
+                        <a href="collect.html" class="strategy__accordion">Energy collection</a>
                         <a href="#" class="strategy__arrow"></a>
     <!--
                         <p class="accordion__inner">The player gets energy by collecting 3 or more stones in a row of red, white, yellow and blue colors which are corresponding to energies.Energy are given for each collected:
@@ -416,7 +414,7 @@
     -->
                     </li>
                     <li class="strategy__item strategy__item--item2">
-                        <a href="hit.html" class="strategy__accordion">Hit</a>
+                        <a href="attack.html" class="strategy__accordion">Hit</a>
                         <a href="#" class="strategy__arrow"></a>
     <!--
                         <p class="accordion__inner">As soon as player collected 4 energy of one element, he attacks the opponent.He chooses the energy, by which he will break the defence of the opponent.
@@ -427,7 +425,7 @@
     -->
                     </li>
                     <li class="strategy__item strategy__item--item3">
-                        <a href="special1.html" class="strategy__accordion">Special stones</a>
+                        <a href="protection.html" class="strategy__accordion">Special stones</a>
                         <a href="#" class="strategy__arrow"></a>
     <!--
                         <p class="accordion__inner">Once the enemy is attacking, the player chooses energy for defense.
@@ -438,7 +436,7 @@
     -->
                     </li>
                     <li class="strategy__item strategy__item--item4">
-                        <a href="special2.html" class="strategy__accordion">Special stones</a>
+                        <a href="special.html" class="strategy__accordion">Special stones</a>
                         <a href="#" class="strategy__arrow"></a>
     <!--                    <p class="accordion__inner">Laser corresponds to the color of the collected energy (4 stones). By matching laser with two or more stones of the same color, the laser explodes all stones in a row.Clicking on the bomb explodes all nearby standing 12 stones in lozenge. If there are more than one bomb on the play area, they are expired with a chain reaction and explodes more stones.Brilliant (internal currency of the game). In the place of collecting 5 stones of the same color the "diamond" is formed. When the diamond matching with a stone he explodes all gems of that color from the play board</p>-->
                     </li>
@@ -476,20 +474,49 @@
                         <br>When collecting the energy and chaos you increases the chance of getting more bombs</p>
                 </div>
                 <div class="strategy__img">
-                    <div class="strategy__board strategy__board--1"></div>
-                    <div class="strategy__board strategy__board--2"></div>
-                    <div class="strategy__board strategy__board--3"></div>
-                    <div class="strategy__board strategy__board--4"></div>
-                    <div class="strategy__board strategy__board--5"></div>
+                    <div class="strategy__board strategy__board--1 active__video">
+                        <video loop muted autoplay class="strategy__video">
+                            <source src="img/video/collect.mp4" type="video/mp4">
+                            <source src="img/video/collect.webm" type="video/webm">
+                            <source src="img/video/collect.ogv" type="video/ogg">
+                        </video>
+                    </div>
+                    <div class="strategy__board strategy__board--2">
+                        <video loop muted autoplay class="strategy__video">
+                            <source src="img/video/hit.mp4" type="video/mp4">
+                            <source src="img/video/hit.webm" type="video/webm">
+                            <source src="img/video/hit.ogv" type="video/ogg">
+                        </video>
+                    </div>
+                    <div class="strategy__board strategy__board--3">
+                        <video loop muted autoplay class="strategy__video">
+                            <source src="img/video/protection.mp4" type="video/mp4">
+                            <source src="img/video/protection.webm" type="video/webm">
+                            <source src="img/video/protection.ogv" type="video/ogg">
+                        </video>
+                    </div>
+                    <div class="strategy__board strategy__board--4">
+                        <video loop muted autoplay class="strategy__video">
+                            <source src="img/video/special.mp4" type="video/mp4">
+                            <source src="img/video/special.webm" type="video/webm">
+                            <source src="img/video/special.ogv" type="video/ogg">
+                        </video>
+                    </div>
+                    <div class="strategy__board strategy__board--5">
+                        <video loop muted autoplay class="strategy__video">
+                            <source src="img/video/luck.mp4" type="video/mp4">
+                            <source src="img/video/luck.webm" type="video/webm">
+                            <source src="img/video/luck.ogv" type="video/ogg">
+                        </video>
+                    </div>
                     <img src="img/background/strategy-iphone.png" alt="strategy-img" class="">
                 </div>
-    
             </div>
         </div>
         <img src="img/background/strategy-bg.png" alt="strategy background" class="strategy__img-bg">
     </div>
     
-    <div class="news" id="news">
+    <div class="news section" id="news">
            <img src="img/background/NEWS_CIRCLE.png" alt="" class="news__circle">
             <div class="container">
                 <div class="news__post news__post--left">
@@ -526,7 +553,7 @@
             </div>
         </div>
     
-    <div class="follow" id="media">
+    <div class="follow section" id="media">
             <div class="container">
                 <div class="follow__header">Follow us</div>
                 <ul class="follow__socials">
@@ -547,7 +574,7 @@
             </div>
         </div>
     
-    <div class="credits-sm">
+    <div class="credits-sm section">
             
             <div class="container">
     <!--
@@ -580,7 +607,7 @@
             </div>
         </div>
     
-    <div class="footer">
+    <div class="footer section">
         <div class="container">
             <div class="small-hide">
                 <div class="footer__item footer__item--1">
@@ -634,6 +661,7 @@
                 <div class="footer__main-text">
                     <img src="img/icons/ATTRACTIVF.png" alt="">
                 </div>
+                <div class="footer__shield"></div>
                 <a href="" class="footer__country-link sw"></a>
                 <a href="" class="footer__country-link uk"></a>
                 <div class="footer__attracti-games"></div>
