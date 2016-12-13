@@ -36,6 +36,10 @@
     line-height: 36px;
     margin-top: 50px;
     color: #5F5F5F;
+    margin-left: 10px;
+    @include respond-to(mobile) {
+        margin-left: auto;
+    }
     @include respond-to(desktop) {
         font: 24px globerregular;
         margin-top: 17px;
@@ -46,6 +50,10 @@
 .championships__phone-model {
     font: 19px globerregular;
     line-height: 30px;
+    margin-left: 10px;
+    @include respond-to(mobile) {
+        margin-left: auto;
+    }
     @include respond-to(desktop) {
         font: 22px globerregular;
     }
@@ -101,12 +109,17 @@
 
 .qualificaion__item1,
 .qualificaion__item10 {
-    width: 100%;
+    width: 95%;
     font: 15px globerbold;
     line-height: 35px;
     letter-spacing: 0.64px;
     background-color: #000;
     border-radius: 5px;
+    margin-left: 2.5%;
+    @include respond-to(mobile) {
+        width: 100%;
+        margin-left: auto;
+    }
     @include respond-to(desktop) {
         width: 176px;
         font: 14px globerbold;
@@ -199,15 +212,24 @@
 }
 
 .championships__subheader {
-    text-align: center;
-    width: 56%;
-    text-transform: uppercase;
-    font: 14px globerregular;
-    letter-spacing: -.21px;
-    line-height: 22px;
-    margin-top: 115px;
-    margin-left: auto;
-    margin-right: auto;
+    display: inline-block;
+    font: 19px globerbold;
+    line-height: 52px;
+    text-transform: capitalize;
+    margin-left: 22px;
+    margin-top: 15px;
+    @include respond-to(desktop) {
+        display: block;
+        margin-top: 115px;
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 22px;
+        font: 14px globerregular;
+        letter-spacing: -.21px;
+        width: 56%;
+        text-transform: uppercase;
+        text-align: center;
+    }
 }
 
 .cell__empty,
@@ -245,13 +267,18 @@
 .championships__item {
     position: relative;
     height: auto;
-    width: 100%;
+    width: 95%;
     box-sizing: border-box;
     border-left: 4px solid #2C2C2C;
     margin-top: 22px;
     margin-bottom: 25px;
     background-color: #121212;
     padding-bottom: 45px;
+    margin-left: 2.5%;
+    @include respond-to(mobile) {
+        margin-left: auto;
+        width: 100%;
+    }
     @include respond-to(desktop) {
         width: 1200px;
         height: 120px;
@@ -262,7 +289,10 @@
 .championships__item--item3 {
     /*border-color: $cian;*/
 }
-
+.championships__item--item4 {
+    border: 0;
+    height: 79px;
+}
 .time {
     display: inline-block;
     margin-top: 27px;
@@ -368,18 +398,6 @@
     }
     
 }
-//.battle-final--first {
-//    width: 45%;
-//    @include respond-to(desktop) {
-//        width: auto;
-//    }
-//}
-//.battle-final--second {
-//    width: 45%;
-//    @include respond-to(desktop) {
-//        width: auto;
-//    }
-//}
 .battle1-2--second,
 .battle-final--second,
 .battle1-4--third {
@@ -402,12 +420,33 @@
         margin-left: 43px;
     }
 }
-
+.battle-final--first {
+    position: absolute;
+    left: -145px;
+    @include respond-to(mobile) {
+        position: absolute;
+        left: -190px;
+    }
+    @include respond-to(desktop) {
+        left: auto;
+        position: relative;
+        margin-left: 235px;
+    }
+}
+.battle-final--second {
+    margin-left: 165px;
+    @include respond-to(mobile) {
+        margin-left: 210px;
+    }
+    @include respond-to(desktop) {
+        margin-left: 68px;
+    }
+}
 .cell__winner {
     box-sizing: border-box;
     width: 130px;
     height: 45px;
-    margin: 21px auto 0 auto;
+    display: inline-block;
     border-radius: 11px;
     box-shadow: 0px 3px 1px 0px #383838;
     background-size: cover;
@@ -415,6 +454,14 @@
     text-align: center;
     background-image: -webkit-gradient(linear, 0% 40%, 0% 100%, from(#000000), to(#282828));
     font: 14px globerxbold;
+    margin-top: 16px;
+    float: right;
+    margin-right: 20px;
+    @include respond-to(desktop) {
+        display: block;
+        float: none;
+        margin: 21px auto 0 auto;
+    }
 }
 
 .cell--first {
@@ -432,6 +479,9 @@
     @include respond-to(desktop) {
         display: none;
     }
+}
+.vs-final {
+    top: 50px;
 }
 .cell--second {
     position: absolute;
