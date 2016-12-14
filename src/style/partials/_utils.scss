@@ -10,7 +10,7 @@ body {
 // Media-queries mixin. Mobile first method
 @mixin respond-to($media) {
     @if $media==mobile {
-        @media (min-width: 375px and max-width: 1000px) {
+        @media (min-width: 375px) {
             @content;
         }
     }
