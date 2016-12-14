@@ -82,8 +82,8 @@ $(function () {
     
     if ( navigator.userAgent.match(/iPad/i) != null) ) {
         $('.strategy__img').css({'display': 'inline-block'});
+        console.log('!!!');
     }
-    
     // Accordion 
 //    $('.strategy__accordion').add('.strategy__arrow').on('click', function (e) {
 //        e.preventDefault();
