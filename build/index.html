@@ -6,10 +6,10 @@
     <script>
         (function(doc) {
             var viewport = document.getElementById('viewport');
-            if ( navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPod/i)) {
-                viewport.setAttribute("content", "initial-scale=0.3");
-            } else if ( navigator.userAgent.match(/iPad/i) ) {
+            if ( navigator.userAgent.match(/iPad/i) ) {
                 viewport.setAttribute("content", "initial-scale=0.7");
+            } else {
+                viewport.setAttribute("content", "width=device-width", "initial-scale=1.0", "user-scalable=no" );
             }
         }(document));
     </script>
