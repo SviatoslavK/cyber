@@ -163,6 +163,13 @@
 
 .strategy__img {
     display: none;
+    @media (min-width: 999px) {
+        position: absolute;
+        width: 863px;
+        height: 696px;
+        left: 400px;
+        display: inline-block;
+    }
     @include respond-to(desktop) {
         position: absolute;
         width: 863px;
