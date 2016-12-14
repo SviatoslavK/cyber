@@ -163,12 +163,16 @@
 
 .strategy__img {
     display: none;
-    position: absolute;
-    width: 863px;
-    height: 696px;
-    left: 400px;
+    @include respond-to(tablet) {
+        display: inline-block;
+       
+    }
     @include respond-to(desktop) {
         display: inline-block;
+        position: absolute;
+        width: 863px;
+        height: 696px;
+        left: 400px;
     }
 }
 
