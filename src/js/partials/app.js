@@ -71,7 +71,7 @@ $(function () {
     });
     
     
-    if ( navigator.userAgent.match(/iPad/i) ) {
+    if ( navigator.userAgent.match(/iPad/i) != null) ) {
         $('.strategy__img').css({'display': 'inline-block'});
     }
     
