@@ -2,18 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,  user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
-    <script
-            src="https://code.jquery.com/jquery-2.2.4.min.js"
-            integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-            crossorigin="anonymous"></script>
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script type="text/javascript">
-        if (/iphone|ipod|android|blackberry|opera mini|opera mobi|skyfire|maemo|windows phone|palm|iemobile|symbian|symbianos|fennec/i.test(navigator.userAgent.toLowerCase())) {
-            $("meta[name='viewport']").attr("content", "width=640");
-        }
+    <meta id="viewport" name='viewport'>
+    <script>
+        (function(doc) {
+            var viewport = document.getElementById('viewport');
+            if ( navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPod/i)) {
+                viewport.setAttribute("content", "initial-scale=0.3");
+            } else if ( navigator.userAgent.match(/iPad/i) ) {
+                viewport.setAttribute("content", "initial-scale=0.7");
+            }
+        }(document));
     </script>
-    
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Title</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
@@ -701,7 +701,10 @@
         </div>
     </div>
     </div>
-    
+    <script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
